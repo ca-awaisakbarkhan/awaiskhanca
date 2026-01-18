@@ -1,38 +1,87 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, sans-serif;
   background: #f4f6f8;
+  color: #333;
 }
 
-header {
-  background: #003366;
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("images/laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 20px;
   text-align: center;
 }
 
-nav {
-  background: #0055a5;
-  padding: 10px;
-  text-align: center;
+.hero h1 {
+  font-size: 48px;
 }
 
-nav a {
+.hero p {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #0077cc;
   color: white;
-  margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 5px;
 }
 
-section {
-  padding: 30px;
+/* ABOUT */
+.about {
+  display: flex;
+  padding: 50px;
   background: white;
-  margin: 20px;
+  gap: 30px;
 }
 
-footer {
+.about img {
+  width: 40%;
+  border-radius: 8px;
+}
+
+/* SERVICES */
+.services {
+  padding: 50px;
   text-align: center;
+}
+
+.service-box {
+  display: inline-block;
+  width: 300px;
+  background: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.service-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* CONTACT */
+.contact {
   background: #003366;
   color: white;
-  padding: 10px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
